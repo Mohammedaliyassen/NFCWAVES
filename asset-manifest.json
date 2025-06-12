@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Mohammedaliyassen/NFCWAVES.git/static/css/main.54ef67d3.css",
+    "main.js": "/Mohammedaliyassen/NFCWAVES.git/static/js/main.7f65b363.js",
+    "static/media/user-1.jpg": "/Mohammedaliyassen/NFCWAVES.git/static/media/user-1.40ba6db55f06b2c37b3d.jpg",
+    "static/media/Textlayer.png": "/Mohammedaliyassen/NFCWAVES.git/static/media/Textlayer.45e359c9e0c12171f1d2.png",
+    "static/media/بدون عنوان.png": "/Mohammedaliyassen/NFCWAVES.git/static/media/بدون عنوان.32abb21a1a7e2663785a.png",
+    "static/media/ex1.png": "/Mohammedaliyassen/NFCWAVES.git/static/media/ex1.b491dd483e114d8d23bc.png",
+    "static/media/ex2.png": "/Mohammedaliyassen/NFCWAVES.git/static/media/ex2.f1d21810c2cdce3b7eca.png",
+    "static/media/ex3.png": "/Mohammedaliyassen/NFCWAVES.git/static/media/ex3.fe007cd153730a450cc0.png",
+    "static/media/waves.png": "/Mohammedaliyassen/NFCWAVES.git/static/media/waves.c40086380b152ab73469.png",
+    "static/media/instagram.png": "/Mohammedaliyassen/NFCWAVES.git/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/stars.png": "/Mohammedaliyassen/NFCWAVES.git/static/media/stars.0e4ce0c99cb5a27e2253.png",
+    "static/media/phone-1.png": "/Mohammedaliyassen/NFCWAVES.git/static/media/phone-1.452ea033ff46f9db912d.png",
+    "static/media/whatsapp.svg": "/Mohammedaliyassen/NFCWAVES.git/static/media/whatsapp.67ac45b4206ff2107c008f97a524f02d.svg",
+    "index.html": "/Mohammedaliyassen/NFCWAVES.git/index.html",
+    "main.54ef67d3.css.map": "/Mohammedaliyassen/NFCWAVES.git/static/css/main.54ef67d3.css.map",
+    "main.7f65b363.js.map": "/Mohammedaliyassen/NFCWAVES.git/static/js/main.7f65b363.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54ef67d3.css",
+    "static/js/main.7f65b363.js"
+  ]
+}
