@@ -7,7 +7,7 @@ function Call() {
         <a href="tel:01157070765">
             <span className="call" id='whatsapp'>
                 <img src={phone} alt='whatsapp' />
-                <p> call : <a href="tel:01157070765">0111111111</a></p>
+                <p> call : <a href="tel:01157070765">01157070765</a></p>
             </span>
         </a>
     );
