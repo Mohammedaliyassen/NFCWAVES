@@ -1,0 +1,21 @@
+.carouselStyle{
+    width: 100%;
+    height: 60%;
+}
+.carouselStyle img{
+    width: 40%;
+    border-radius: 20px;
+}
+.carouselStyle .carousel-caption{
+    bottom: -0.75rem !important;
+}
+@media (max-width:700px){
+    .carouselStyle{
+        width: 100%;
+        height: 60%;
+    }
+    .carouselStyle img{
+        width: 90%;
+        border-radius: 20px;
+    }
+}

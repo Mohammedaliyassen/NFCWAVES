@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0) translateX(0);
+  }
+
+  25% {
+    transform: rotate(-8deg) translateX(4px);
+  }
+
+  50% {
+    transform: rotate(8deg) translateX(-4px);
+  }
+
+  75% {
+    transform: rotate(-8deg) translateX(4px);
+  }
+}
+
+.nfc-404-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #03093c;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  padding: 2rem;
+  overflow: hidden;
+  direction: rtl;
+}
+
+.nfc-card {
+  width: 240px;
+  height: 380px;
+  background: linear-gradient(145deg, #101852, #03093c);
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(3, 28, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid rgba(3, 28, 255, 0.2);
+  padding: 20px;
+  animation: fadeIn 0.8s ease-out forwards;
+  /* Apply fade-in animation */
+}
+
+.nfc-card::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 45px;
+  height: 35px;
+  background: linear-gradient(to right, #d4af37, #c09b2e);
+  border-radius: 6px;
+  opacity: 0.9;
+}
+
+.nfc-icon-wrapper {
+  color: #e74c3c;
+  /* Red color for the icon to indicate an error */
+  animation: wiggle 2.5s ease-in-out infinite;
+  /* Apply wiggle animation */
+}
+
+.error-code {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #031cff;
+  /* Bright Blue */
+  line-height: 1;
+  margin-top: 1rem;
+  letter-spacing: -5px;
+}
+
+.error-status {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e74c3c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  animation: fadeIn 0.8s  ease-out forwards;
+  /* Apply fade-in with delay */
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #a9b3d4;
+  max-width: 500px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  animation: fadeIn 0.8s  ease-out forwards;
+  /* Apply fade-in with delay */
+}
+
+.home-button-wrapper {
+  animation: fadeIn 0.8s  ease-out forwards;
+  /* Apply fade-in with delay */
+}
+
+.home-button {
+  background: #031cff;
+  color: white;
+  padding: 14px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(3, 28, 255, 0.4);
+  border: none;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #0015d1;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(3, 28, 255, 0.5);
+}
+

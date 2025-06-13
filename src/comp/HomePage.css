@@ -1,0 +1,130 @@
+.imgSide img {
+    width: 80%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: matrix3d(1, -0.09, 0, 0, 0, 1, 0, -0.0009, 0, 0, 1, 0, 0, 0, 0, 1);
+    border-radius: 20px;
+    shape-outside: border-box;
+}
+
+.imgSide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.imgSide span {
+    display: block;
+    width: 419px;
+    height: 160px;
+    position: relative;
+    animation: upDown 3s infinite ease-in-out;
+}
+@keyframes upDown{
+    0% {top: 40px;}
+    50%{top: 0;}
+    100% {top: 40px;}
+}
+.imgSide::after {
+    content: "";
+    position: absolute;
+    width: 375px;
+    height: 20px;
+    background: #0000006c;
+    top: 120%;
+    filter: blur(4px);
+    transform: rotate3d(1, 1, 1, -10deg);
+    border-radius: 20px;
+    animation: scaleChange 3s infinite ease-in-out;
+}
+@keyframes scaleChange{
+    0% {scale: 1;}
+    50%{scale: 0.9;}
+    100% {scale:1;}
+}
+
+.homePage {
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+    /* overflow: hidden; */
+    color: #ffff;
+}
+
+.keyFea {
+    color: #f7c006;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+
+.signBTNs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.homePage div {
+    z-index: 5;
+}
+
+.homePage .container {
+    margin: 50px auto;
+}
+
+.homePage::after {
+    content: "";
+    position: fixed;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    background: fixed;
+    background: url(http://localhost:3000/static/media/Textlayer.8e321cd45121aa75f8ba.png) center no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: 0;
+
+}
+@media (max-width:400px) {
+    .signBTNs {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgSide img {
+        width: 65%;
+        height: 75%;
+        transform-style: preserve-3d;
+        transform: matrix3d(1, -0.09, 0, 0, 0, 1, 0, -0.0009, 0, 0, 1, 0, 0, 0, 0, 1);
+        border-radius: 20px;
+        shape-outside: border-box;
+    }
+    .imgSide::after {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 20px;
+        background: #0000006c;
+        left: 65px;
+        top: 105%;
+        filter: blur(4px);
+        transform: rotate3d(1, 1, 1, -10deg);
+        border-radius: 20px;
+        animation: scaleChange 3s infinite ease-in-out;
+    }
+    .imgSide span {
+        display: block;
+        width: 100%;
+        height: 160px;
+        position: relative;
+        animation: upDown 3s infinite ease-in-out;
+    }
+    .imgSide img {
+        width: 110%;
+    }
+}

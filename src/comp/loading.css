@@ -1,0 +1,74 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+
+  /* Keyframes for the pulsing animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.95);
+      opacity: 0.7;
+    }
+  }
+
+  /* Keyframes for the wave animations */
+  @keyframes wave {
+    to {
+      stroke-dashoffset: 0;
+      opacity: 0;
+    }
+  }
+
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #03093c; /* Dark Blue Background */
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    overflow: hidden;
+    direction: rtl;
+  }
+
+  .nfc-loader-icon {
+    width: 120px;
+    height: 120px;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  /* Styling for the animated waves */
+  .nfc-loader-icon .wave {
+    fill: none;
+    stroke: #031cff; /* Bright Blue */
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    opacity: 1;
+    transform-origin: 50% 50%;
+    animation: wave 2s ease-out infinite;
+  }
+
+  /* Stagger the wave animations for a better effect */
+  .nfc-loader-icon .wave-2 {
+    animation-delay: 0.3s;
+  }
+  .nfc-loader-icon .wave-3 {
+    animation-delay: 0.6s;
+  }
+
+  .loading-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #a9b3d4; /* Lighter blue-grey */
+    margin-top: 2rem;
+    letter-spacing: 2px;
+  }

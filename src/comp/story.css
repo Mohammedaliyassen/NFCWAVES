@@ -1,0 +1,15 @@
+.storyCard:hover{
+    transform: scale(1.06);
+    transition: 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px #230158;
+}
+.storyCard button:hover{
+    transform: scale(1.06) translateY(-10px);
+    transition: 0.5s ease-in-out;
+    background-color: rgb(10, 2, 114) !important;
+    box-shadow: 1px 1px 10px #2845eb ;
+}
+.storyCard button{
+    transition: 0.5s ease-in-out;
+    background-color: rgb(110, 101, 235) !important;
+}
