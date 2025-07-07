@@ -14,11 +14,20 @@
 
 .card {
     padding: 30px 10px;
-    width: 40vw;
+    width: 60vw;
     margin: 20px;
     background: url('../imgs/stars.png') no-repeat #0d003c78;
     background-size: 100%;
     border-radius: 10px;
+}
+
+.imgHolder {
+    width: 40vw;
+    height: 40vw;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: shadowMove 10s infinite ease-in-out;
 }
 
 .userData {
@@ -35,15 +44,15 @@
 }
 
 .card-img-top {
-    border-radius: 50%;
     margin-bottom: 20px;
     width: 100%;
     box-shadow: 14px 0px 20px 0px #ededed5c;
-    animation: shadowMove 10s infinite ease-in-out;
 }
+
 .storyCard {
-    width: 22rem;
+    width: 24rem;
 }
+
 @keyframes shadowMove {
     0% {
         box-shadow: 1px -12px 20px 0px #ededed5c;
@@ -73,7 +82,7 @@
     background: transparent;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .call {
@@ -111,8 +120,9 @@ a {
     background: transparent;
     cursor: pointer;
 }
+
 .list-group-item img:hover {
-    transform:scale(1.099);
+    transform: scale(1.099);
     transition: .4s;
 }
 
@@ -159,6 +169,14 @@ a {
         width: auto;
         margin: 20px;
     }
+
+    .imgHolder {
+        width: 80vw;
+        height: 80vw;
+    }
+    .storyCard {
+    width: 24rem;
+}
 }
 
 @media (max-width:400px) {
@@ -175,4 +193,7 @@ a {
         overflow: hidden;
         justify-content: flex-start;
     }
+    .storyCard {
+    width: 18rem;
+}
 }

@@ -10,7 +10,7 @@ body{
   background: linear-gradient(130deg,#031cff,#000,#03093c);
   background-size: 500% 500%;
   color: #00d4ff;
-  font-family: sans-serif;
+  font-family: 'Cairo',sans-serif;
   margin: 0;
   overflow-x: hidden;
   padding: 0;

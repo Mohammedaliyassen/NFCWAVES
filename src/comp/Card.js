@@ -29,7 +29,7 @@ function Card() {
   console.log('Error:', error); // عرض حالة الخطأ في الكونسول
   console.log('Data:', data); // عرض البيانات في الكونسول
 
-  if (loading) return <Loading/>;
+  if (loading) return <Loading />;
   if (error) return <p>error {error}</p>;
 
   const userData = data ? data.items.find(user => user.id === id) : null; // تعديل مسار البيانات
@@ -41,9 +41,12 @@ function Card() {
         <div className='productsSec'>
           <div className="card">
             <div className='userData'>
-              <img src={userData ? `https://waves.pockethost.io/api/files/User/${userData.id}/${userData.Avatar}` : user_1} className="card-img-top" alt="..." />
+              <div className='imgHolder'>
+                <img src={userData ? `https://waves.pockethost.io/api/files/User/${userData.id}/${userData.Avatar}` : user_1} className="card-img-top" alt="..." />
+              </div>
               <h1>{userData ? userData.Name : 'User Name'}</h1>
-              <h6>{userData ? userData.Bio : 'User Description'}</h6>
+              <h4 style={{fontSize:'large'}}>مطور ويب </h4>
+              <h6 style={{fontSize:'1.25rem',lineHeight:'30px'}}>{userData ? userData.Bio : 'User Description'}</h6>
             </div>
             <ul className="list-group list-group-flush">
               <li className="list-group-item" id='facebook'>
