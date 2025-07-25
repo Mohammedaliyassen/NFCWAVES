@@ -10,21 +10,21 @@ function Footer() {
                     <div className="footerContent col-12 col-lg-8 d-flex justify-content-around border-end">
                         <div className="about  d-flex flex-column">
                             <h2>ABOUT</h2>
-                            <a href="https://nfcwaves.netlify.app/" className="p text-white">connect us</a>
-                            <a href="https://nfcwaves.netlify.app/" className="p text-white">about us</a>
-                            <a href="https://nfcwaves.netlify.app/" className="p text-white">careers</a>
+                            <a href="https://waves.pockethost.io/" className="p text-white">connect us</a>
+                            <a href="https://waves.pockethost.io/" className="p text-white">about us</a>
+                            <a href="https://waves.pockethost.io/" className="p text-white">careers</a>
                         </div>
                         <div className="help d-flex flex-column">
                             <h2>HELP</h2>
-                            <a href="https://nfcwaves.netlify.app/" className="p text-white">connect us</a>
-                            <a href="https://nfcwaves.netlify.app/" className="p text-white">about us</a>
-                            <a href="https://nfcwaves.netlify.app/" className="p text-white">careers</a>
+                            <a href="https://waves.pockethost.io/" className="p text-white">connect us</a>
+                            <a href="https://waves.pockethost.io/" className="p text-white">about us</a>
+                            <a href="https://waves.pockethost.io/" className="p text-white">careers</a>
                         </div>
                         <div className="social me-lg-5 m-0 d-flex flex-column">
                             <h2>SOCIAL</h2>
-                            <a href="https://nfcwaves.netlify.app/" className="p text-white">facebook</a>
-                            <a href="https://nfcwaves.netlify.app/" className="p text-white">instegram</a>
-                            <a href="https://nfcwaves.netlify.app/" className="p text-white">linkedin</a>
+                            <a href="https://waves.pockethost.io/" className="p text-white">facebook</a>
+                            <a href="https://waves.pockethost.io/" className="p text-white">instegram</a>
+                            <a href="https://waves.pockethost.io/" className="p text-white">linkedin</a>
                         </div>
                     </div>
                     <div className="col-12 col-lg-4">

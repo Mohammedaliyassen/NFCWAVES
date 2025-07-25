@@ -45,7 +45,7 @@ const Lost404 = () => {
         </p>
 
         <div className="home-button-wrapper">
-          <a href="https://nfcwaves.netlify.app/" className="home-button" >
+          <a href="https://waves.pockethost.io/" className="home-button" >
             اتواصل معانا عشان تكون جزء من كيان الشركة
           </a>
         </div>
