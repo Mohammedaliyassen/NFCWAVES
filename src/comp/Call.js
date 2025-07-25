@@ -2,14 +2,31 @@
 import phone from '../imgs/phone-1.png'
 
 
-function Call() {
+function Call(props) {
+    const { telNo, editMode = false, editData, func } = props
     return (
-        <a href="tel:01157070765">
-            <span className="call" id='whatsapp'>
-                <img src={phone} alt='whatsapp' />
-                <p> call : <a href="tel:01157070765">01157070765</a></p>
-            </span>
-        </a>
+        <>
+            {editMode ?
+                <span className="call" id='whatsapp' >
+                    <img src={phone} alt='whatsapp' />
+                    <input
+                        type="tel"
+                        name="phone"
+                        className="callInput"
+                        placeholder="رقم الهاتف الأساسي"
+                        value={editData}
+                        onChange={func}
+                    />
+                </span>
+                :
+                <a href={`tel:${telNo}`}>
+                    <span className="call" id='whatsapp'>
+                        <img src={phone} alt='whatsapp' />
+                        <p> call : <a href={`tel:${telNo}`}>{telNo}</a></p>
+                    </span>
+                </a>
+            }
+        </>
     );
 }
 
